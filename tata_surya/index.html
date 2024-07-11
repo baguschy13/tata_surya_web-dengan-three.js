@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #infoPopup {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="infoPopup">
+        <h2 id="planetName">Sun</h2>
+        <p id="planetDiameter">Diameter: 1,392,700 km</p>
+        <p id="planetDistance">Distance from Earth: 149.6 million km</p>
+        <p id="planetRotation">Rotation Speed: 25 days</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
